@@ -1,0 +1,49 @@
+doctype html
+head
+  link(rel='stylesheet' type='text/css' href='./book.css')
+  style.
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap');
+  title Book Drive
+  form(action='/add' method='POST')
+    #input-info
+      main
+        article
+          label  Name of the Book &#x21E8; 
+          input#book-name.name(type='text' name='book_name' placeholder='Book name' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Book name'")
+        article
+          label  Name of the Author &#x21E8; 
+          input#author-name.name(type='text' name='author_name' placeholder='Author name' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Author name'")
+        article
+          label  Select Book&apos;s Cover &#x21E8; 
+          input#book-img.browse(type='file' accept='image/*' name='img')
+        article
+          label  Price &#x21E8; 
+          input#price.name(type='number' name='price' placeholder='Price of the Book' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Author name'")
+          label  EGP 
+        article
+          label  Category &#x21E8; 
+          input#category.name(type='text' name='category' placeholder='Category of the Book' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Author name'")
+          button.add-btn  ADD BooK 
+    
+      //- <div class="added">
+      //- <img src="./Images/1) Clean Code.jpg" width="120px" height="120px">
+      //- <p>Name of the book: Clean</p>
+      //- <p>Name of the author: robert</p>
+      //- </div>
+
+  //- <footer>
+  //- <p><span>Description</span></p>
+  //- <pre>
+  //- ⇨ To Add Book: Enter book's information & Click to ADD BooK button.
+  //- </pre>
+  //- </footer>
+
+  //- footer
+  //-   //- pre
+  //-   //-   span Description 
+  //-   //-   |⇨ To Add Book: Enter book's information & Click to ADD BooK button.
+  //-   //-   |                 ⇨ To Remove Book: Double click to the book that you want to remove it.
+                  
+  //-   p &copy; Copyright 2021
